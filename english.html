@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>请稍后...</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #f5faff;
+      font-family: Arial, sans-serif;
+    }
+
+    a {
+      padding: 12px 24px;
+      text-decoration: none;
+      background-color: #007BFF; /* Bootstrap blue */
+      color: white;
+      border-radius: 8px;
+      font-size: 18px;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    a:hover {
+      background-color: #0056b3;
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+  <script>
+    try {
+      document.location = "https://aidesigners.top/english";
+    } catch (error) {
+      console.error("something's wrong:", error);
+      document.body.innerHTML = '<p><a href="https://aidesigners.top/english">点击浏览</a></p>';
+    }
+  </script>
+
+  <noscript>
+    <p><a href="https://aidesigners.top/english">点击浏览</a></p>
+  </noscript>
+</body>
+</html>
